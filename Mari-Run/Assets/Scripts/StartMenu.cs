@@ -11,6 +11,9 @@ public class StartMenu : MonoBehaviour
     public GameObject gameCamera;
     public bool activateGameCam;
 
+    public GameObject title;
+    public GameObject shadow;
+
     public MariSounds mariS;
     // Start is called before the first frame update
     void Start()
@@ -26,9 +29,12 @@ public class StartMenu : MonoBehaviour
     {
         if((Input.touchCount>=1 || Input.GetKeyDown(KeyCode.Mouse0)) && !gM.start){
             gM.start = true;
+            Destroy(title);
             distance.SetActive(true);
-            gameObject.GetComponent<Text>().enabled = false;
             mariS.playStart();
+            gameObject.GetComponent<Text>().enabled = false;
+            Destroy(shadow);
+            
         }
 
         if(gM.start && !activateGameCam){

@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraFollow
     - CoinScp
+    - CopyText
+    - DeathScreen
     - GameManager
     - MariSounds
     - PlayerController
@@ -18,10 +20,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -30,8 +30,10 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -80,37 +82,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 12008}
+      Script: {instanceID: 11920}
     - Class: 114
-      Script: {instanceID: 12020}
+      Script: {instanceID: 12010}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12022}
     - Class: 114
-      Script: {instanceID: 12502}
+      Script: {instanceID: 12062}
     - Class: 114
-      Script: {instanceID: 12512}
+      Script: {instanceID: 12274}
     - Class: 114
-      Script: {instanceID: 12550}
+      Script: {instanceID: 12404}
     - Class: 114
-      Script: {instanceID: 13318}
+      Script: {instanceID: 12506}
     - Class: 114
-      Script: {instanceID: 13458}
+      Script: {instanceID: 12516}
     - Class: 114
-      Script: {instanceID: 13700}
+      Script: {instanceID: 12554}
     - Class: 114
-      Script: {instanceID: 13724}
+      Script: {instanceID: 13088}
     - Class: 114
-      Script: {instanceID: 14144}
+      Script: {instanceID: 13322}
     - Class: 114
-      Script: {instanceID: 14168}
+      Script: {instanceID: 13462}
     - Class: 114
-      Script: {instanceID: 14228}
+      Script: {instanceID: 13704}
     - Class: 114
-      Script: {instanceID: 15732}
+      Script: {instanceID: 13728}
     - Class: 114
-      Script: {instanceID: 23112}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 49466}
+      Script: {instanceID: 14150}
+    - Class: 114
+      Script: {instanceID: 14174}
+    - Class: 114
+      Script: {instanceID: 14208}
+    - Class: 114
+      Script: {instanceID: 14236}
+    - Class: 114
+      Script: {instanceID: 21012}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -172,6 +182,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 7ece9b8b30afab8eb358d86edb9f55c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CoinScp
   - hash:
       serializedVersion: 2
       Hash: a2113831d3323f931007e1b3812dc814
@@ -342,6 +358,12 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
+      Hash: 53239f3a0aa90f385eaebb4bce2891a2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartMenu
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -402,7 +424,7 @@ ScriptsOnlyBuild:
     className: NoiseSettings
   - hash:
       serializedVersion: 2
-      Hash: 457262bff2bbeda21175c0ba74068391
+      Hash: 6387246fb2adf8334874c8dda838bde9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -768,6 +790,12 @@ ScriptsOnlyBuild:
     className: CinemachineInputProvider
   - hash:
       serializedVersion: 2
+      Hash: b7ab384aea3775768cebbd44d346f078
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MariSounds
+  - hash:
+      serializedVersion: 2
       Hash: ffd3ed4fcd23b3e7745287c99a637247
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -912,6 +940,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: 6397725c52e0d7336be94f5e867e13f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeathScreen
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -930,23 +964,11 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 7ece9b8b30afab8eb358d86edb9f55c5
+      Hash: eb0845bf5e148be7b3cee62b9eb20e77
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CoinScp
-  - hash:
-      serializedVersion: 2
-      Hash: e7b6321378e163cd862d1728a744b7ee
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: StartMenu
-  - hash:
-      serializedVersion: 2
-      Hash: b7ab384aea3775768cebbd44d346f078
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MariSounds
+    className: CopyText
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/Nacho/Desktop/lmao.apk
+  playerPath: C:/Users/Nacho/Desktop/runrun.apk
