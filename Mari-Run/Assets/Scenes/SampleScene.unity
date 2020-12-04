@@ -3354,7 +3354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
       propertyPath: tiles.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
       propertyPath: tiles.Array.data[0]
@@ -3383,7 +3383,7 @@ PrefabInstance:
     - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
       propertyPath: tiles.Array.data[6]
       value: 
-      objectReference: {fileID: 4543920218790281099, guid: aea7df3190a8e1c449c4d58daaf681ef, type: 3}
+      objectReference: {fileID: 4543920218790281099, guid: d57eddaa721feba4a815ebc9389a3b72, type: 3}
     - target: {fileID: 2136346918352102966, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
       propertyPath: m_RootOrder
       value: 3
