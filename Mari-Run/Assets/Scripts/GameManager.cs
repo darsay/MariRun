@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public Text puntosText;
     public bool pointsAdded;
     public PlayerController player;
+
+    public bool start;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +19,15 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!player.dead){
-            if(!pointsAdded)
-            StartCoroutine(PointsPerDistance());
+        if(start){
+            
+            if(!player.dead){
+                if(!pointsAdded)
+                StartCoroutine(PointsPerDistance());
 
-            puntosText.text = puntos.ToString() + 'm';
-        }
-        
+                puntosText.text = puntos.ToString() + 'm';
+            }
+        }      
     }
 
     IEnumerator PointsPerDistance(){

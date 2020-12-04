@@ -17,8 +17,16 @@ public class PlayerController : MonoBehaviour
     public bool forceFalling;
     public Animator anim;
     public RagDoll ragd;
+    public GameManager gM;
+    public GameObject model;
 
+    public MariSounds mariS;
     public bool dead;
+
+    public GameObject gameCamera;
+    public GameObject deathCamera;
+    public bool activateDeathCam;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -64,7 +72,14 @@ public class PlayerController : MonoBehaviour
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
                 anim.SetBool("Jumping", true);
             }
-        }                        
+        }else{
+            if(!activateDeathCam){
+                gameCamera.GetComponent<CameraFollow>().enabled = false;
+                ActivateDeathMenu();
+            }
+            deathCamera.transform.position = new Vector3(model.transform.position.x, model.transform.position.y + 6, model.transform.position.z-2);
+            
+        }                       
     }
     
     void FixedUpdate()
@@ -110,12 +125,43 @@ public class PlayerController : MonoBehaviour
             ragd.SetEnabled(true);
             dead = true;
             rb.velocity = Vector3.zero;
+            mariS.playDeath();
+            ActivateDeathMenu();
+        }
+
+        if(other.gameObject.CompareTag("Coin")){
+            other.gameObject.GetComponent<CoinScp>().playSound();
+            Destroy(other.gameObject.transform.GetChild(0).gameObject);
+            StartCoroutine(DestroyCoin(other));
+            gM.puntos += 5;
         }
     }
 
+    public void ActivateDeathMenu(){
+        gameCamera.transform.position = Vector3.Lerp(gameCamera.transform.position, deathCamera.transform.position, 10 * Time.deltaTime);
+        gameCamera.transform.rotation = Quaternion.Lerp(gameCamera.transform.rotation, deathCamera.transform.rotation, 10 * Time.deltaTime);
+
+        StartCoroutine(waitCam());
+    }
+
+    IEnumerator waitCam(){
+        yield return new WaitForSeconds(1f);
+
+        activateDeathCam = true;
+        gameCamera.GetComponent<Camera>().enabled = false;
+        gameCamera.GetComponent<AudioListener>().enabled = false;
+        deathCamera.GetComponent<Camera>().enabled = true;
+        deathCamera.GetComponent<AudioListener>().enabled = true;
+    }
     private IEnumerator StartJump(){
         detectFloor = false;
         yield return new WaitForSeconds(0.1f);
         detectFloor = true;
+    }
+
+    private IEnumerator DestroyCoin(Collider other){
+        yield return new WaitForSeconds(0.3f);
+        Destroy(other.gameObject);
+        
     }
 }

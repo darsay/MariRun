@@ -10,6 +10,8 @@ public class TileManager : MonoBehaviour
     public int numberOfTiles = 15;
     public Transform player;
     private List<GameObject> activeTiles = new List<GameObject>();
+
+    public GameManager gM;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,12 +25,25 @@ public class TileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int tileIdx = Random.Range(0, tiles.Length);
-        if(player.transform.position.z -10>zSpawn-(numberOfTiles*tileLength))
-        {
-                SpawnTile(tileIdx);
-                DeleteTile();
+        if(gM.start){
+            int tileIdx = Random.Range(0, tiles.Length);
+            if(player.transform.position.z -10>zSpawn-(numberOfTiles*tileLength))
+            {
+                    SpawnTile(tileIdx);
+                    DeleteTile();
+            }
+        }else{
+            if(player.transform.position.z -10>zSpawn-(numberOfTiles*tileLength))
+            {
+                    SpawnTile(0);
+                    DeleteTile();
+            }
         }
+
+        if(player.gameObject.GetComponent<PlayerController>().dead){
+            StartCoroutine(WaitDestroy());
+        }
+        
     }
 
     public void SpawnTile(int tileIndex){
@@ -40,5 +55,12 @@ public class TileManager : MonoBehaviour
     private void DeleteTile(){
         Destroy(activeTiles[0]);
         activeTiles.RemoveAt(0);
+    }
+
+    IEnumerator WaitDestroy(){
+        yield return new WaitForSeconds(3);
+        for(int i =2; i<numberOfTiles; i++){
+                Destroy(activeTiles[i]);
+            }
     }
 }

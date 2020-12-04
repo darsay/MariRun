@@ -45,6 +45,9 @@
      <Compile Include="Assets\Scripts\backGround.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\CoinScp.cs" />
+     <Compile Include="Assets\StartMenu.cs" />
+     <Compile Include="Assets\MariSounds.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -571,37 +574,37 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/Mari-Run/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/Nacho/Desktop/Proyectos/Personales/MariRun/MariRun/Mari-Run/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
