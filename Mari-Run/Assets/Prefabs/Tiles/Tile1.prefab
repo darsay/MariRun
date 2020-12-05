@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacles: 000000000000000000000000
-  cars: 000000000000000000000000
+  cars: 010000000000000000000000
 --- !u!1001 &4661040665300180931
 PrefabInstance:
   m_ObjectHideFlags: 0
