@@ -30,10 +30,13 @@ public class TileManager : MonoBehaviour
             if(player.transform.position.z -10>zSpawn-(numberOfTiles*tileLength))
             {
                     SpawnTile(tileIdx);
+                    if(tileIdx == 9){
+                        
+                    }
                     DeleteTile();
             }
         }else{
-            if(player.transform.position.z -10>zSpawn-(numberOfTiles*tileLength))
+            if(player.transform.position.z -15>zSpawn-(numberOfTiles*tileLength))
             {
                     SpawnTile(0);
                     DeleteTile();

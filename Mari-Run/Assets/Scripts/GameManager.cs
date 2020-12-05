@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public int record;
     public GameObject recordGO;
     public bool recordSet;
+    public int speedUp = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,11 @@ public class GameManager : MonoBehaviour
             }
             
             deathMenu.SetActive(true);
+        }
+
+        if(puntos > speedUp){
+            player.speed+=3;
+            speedUp += 50;
         }
     }
 
