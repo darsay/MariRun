@@ -6150,7 +6150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
       propertyPath: tiles.Array.size
+<<<<<<< HEAD
       value: 7
+=======
+      value: 14
+>>>>>>> 00d67a852d3b46d236252c5d24e5a1621b52ecc5
       objectReference: {fileID: 0}
     - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
       propertyPath: tiles.Array.data[0]
@@ -6179,7 +6183,7 @@ PrefabInstance:
     - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
       propertyPath: tiles.Array.data[6]
       value: 
-      objectReference: {fileID: 4543920218790281099, guid: d57eddaa721feba4a815ebc9389a3b72, type: 3}
+      objectReference: {fileID: 4543920218790281099, guid: 3062104a6fd36a846a5d237fc28331d1, type: 3}
     - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
       propertyPath: tiles.Array.data[7]
       value: 
@@ -6187,7 +6191,31 @@ PrefabInstance:
     - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
       propertyPath: tiles.Array.data[8]
       value: 
+<<<<<<< HEAD
       objectReference: {fileID: 2041136962857143714, guid: ea27e6a7444370d40a1b831f0c471f14, type: 3}
+=======
+      objectReference: {fileID: 4543920218790281099, guid: 3062104a6fd36a846a5d237fc28331d1, type: 3}
+    - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
+      propertyPath: tiles.Array.data[9]
+      value: 
+      objectReference: {fileID: 4543920218790281099, guid: 3062104a6fd36a846a5d237fc28331d1, type: 3}
+    - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
+      propertyPath: tiles.Array.data[10]
+      value: 
+      objectReference: {fileID: 4543920218790281099, guid: fde910579527f8545bf2017f946f3121, type: 3}
+    - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
+      propertyPath: tiles.Array.data[11]
+      value: 
+      objectReference: {fileID: 4543920218790281099, guid: 8b22c3ed5fe4c1b4fa5d83f739b07f8b, type: 3}
+    - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
+      propertyPath: tiles.Array.data[12]
+      value: 
+      objectReference: {fileID: 4543920218790281099, guid: de90f4115e2d2314cb7b07c6113078f2, type: 3}
+    - target: {fileID: 2136346918352102965, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
+      propertyPath: tiles.Array.data[13]
+      value: 
+      objectReference: {fileID: 4543920218790281099, guid: 5ee62dbd509533a43956dd276a599648, type: 3}
+>>>>>>> 00d67a852d3b46d236252c5d24e5a1621b52ecc5
     - target: {fileID: 2136346918352102966, guid: bb67ed8d3a541b3468b10473769452fd, type: 3}
       propertyPath: m_RootOrder
       value: 3
