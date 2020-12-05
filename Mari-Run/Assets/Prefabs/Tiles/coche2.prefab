@@ -181,9 +181,10 @@ GameObject:
   - component: {fileID: 4380877587408274483}
   - component: {fileID: 7435695458857571764}
   - component: {fileID: 8662104198183294974}
+  - component: {fileID: 7536075345192967983}
   m_Layer: 0
   m_Name: coche2
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,7 +197,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4001395874264555145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1580392801513965287}
@@ -226,11 +227,24 @@ MeshCollider:
   m_GameObject: {fileID: 4001395874264555145}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: -8545447256379345787, guid: 6f7391003afd94740b892231e015721a, type: 3}
+--- !u!65 &7536075345192967983
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4001395874264555145}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.4316263, y: 2.6095839, z: 4.049544}
+  m_Center: {x: -1.7158132, y: 0.8047919, z: 1.1492903}
 --- !u!1 &7384847189210907665
 GameObject:
   m_ObjectHideFlags: 0
